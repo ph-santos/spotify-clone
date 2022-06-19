@@ -13,7 +13,6 @@ body {
 }
 
 /* Utility Classes */
-
 .btn-primary {
     background-color: #1db954;
     color: #ffffff;
@@ -24,13 +23,18 @@ body {
     font-weight: bold;
 }
 
+.btn-primary:hover {
+    background-color: #1ed760;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
 .logo {
     width: auto;
     height: 40px;
 }
 
 /* Navabr */
-
 .navbar {
     width: 100%;
     display: flex;
@@ -52,6 +56,7 @@ body {
 
 .navbar .navbar-container nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     font-weight: bold;
 }
@@ -69,8 +74,13 @@ body {
     text-decoration: none;
 }
 
-/* Showcase */
+.navbar .navbar-container nav ul li a:hover {
+    color: #1db954;
+    transition: all 0.5s;
+    
+}
 
+/* Showcase */
 .showcase {
     height: 100vh;
     display: flex;
@@ -98,4 +108,127 @@ body {
 .showcase .showcase-container p {
     margin: 15px 0;
     font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.footer .footer-container {
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.footer .footer-container .footer-menu-container {
+    display: flex;
+}
+
+.footer .footer-container .footer-menu {
+    margin: 0 40px;
+    list-style: none;        
+}
+
+.footer .footer-container .footer-menu p {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.65rem;
+}
+
+.footer .footer-container .footer-menu .footer-menu-item {
+    margin: 25px 0;
+    font-size: 0.75rem;
+}
+
+.footer .footer-container .footer-menu .footer-menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.footer .footer-container .footer-menu .footer-menu-item a:hover {
+    color: #1db954;
+    transition: 0.4s;
+}
+
+/* Footer Socials */
+.socials {
+    display: flex;
+}
+
+.socials i {
+    margin-inline: 10px;
+    font-size: 1.7rem;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.socials i:hover {
+    color: #1db954;
+    transition: 0.4s;
+}
+
+
+/* Footer Info */
+.footer-info {
+    width: 60%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #919496;
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.footer-info .footer-info-container-items {
+    display: flex;
+}
+
+.footer-info .footer-info-container-items .footer-info-items {
+    display: flex;
+    list-style: none;
+}
+
+.footer-info .footer-info-container-items .footer-info-items .footer-info-item {
+    margin: 0 10px;
+}
+
+.footer-info .footer-info-container-items .footer-info-items .footer-info-item a {
+    font-weight: bold;
+    color: #919496;
+    text-decoration: none;
+    font-size: 0.75rem;
+    padding: 10px;
+    
+}
+
+.footer-info .footer-info-container-items .footer-info-items .footer-info-item a:hover {
+    color: #1db954;
+    transition: 0.5s;
+}
+
+.footer-info .rights .country {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-info .rights .country p:hover {
+    color: #1db954;    
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer-info .rights .country .brazil-flag {
+    width: auto;
+    height: 20px;
+    margin-left: 10px;
+    display: inline-block;
 }
